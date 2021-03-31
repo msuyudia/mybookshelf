@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_16">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_currently_reading"
+            style="@style/TextViewMainTheme"
+            android:text="@string/title_currently_reading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/line_currently_reading"
+            style="@style/LineTheme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_currently_reading"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_currently_reading"
+            style="@style/RecyclerViewTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_currently_reading"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_book"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_want_to_read"
+            style="@style/TextViewMainTheme"
+            android:layout_marginTop="@dimen/space_8"
+            android:text="@string/title_want_to_read"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_currently_reading"/>
+
+        <View
+            android:id="@+id/line_want_to_read"
+            style="@style/LineTheme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_want_to_read"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_want_to_read"
+            style="@style/RecyclerViewTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_want_to_read"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_book"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_read"
+            style="@style/TextViewMainTheme"
+            android:layout_marginTop="@dimen/space_8"
+            android:text="@string/title_read"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_want_to_read"/>
+
+        <View
+            android:id="@+id/line_read"
+            style="@style/LineTheme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_read"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_read"
+            style="@style/RecyclerViewTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_read"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_book"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

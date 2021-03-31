@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Bookshelf</string>
+    <string name="title_currently_reading">Currently Reading</string>
+    <string name="title_want_to_read">Want to Read</string>
+    <string name="title_read">Read</string>
+    <string name="text_failed_save_currently_read_book">Failed save to currently read books</string>
+    <string name="text_failed_move_currently_read_book">Failed move from currently read books</string>
+    <string name="text_failed_save_want_to_read_book">Failed save to want to read books</string>
+    <string name="text_failed_move_want_to_read_book">Failed move from want to read books</string>
+    <string name="text_failed_save_read_book">Failed save to read books</string>
+    <string name="text_failed_move_read_book">Failed move from read books</string>
+    <string name="text_move_to_currently">Move to Currently Reading</string>
+    <string name="text_move_to_want">Move to Want to Read</string>
+    <string name="text_move_to_read">Move to Read</string>
+</resources>
